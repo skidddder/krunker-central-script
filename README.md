@@ -1,2 +1,3 @@
 # krunker-hack
 KRUNKER CENTRAL DEOBFUSCATED SOURCE SCRIPT REAL!!!!!
+no keysystem
