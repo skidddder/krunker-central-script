@@ -1,4 +1,3 @@
 # krunker-hack
-KRUNKER CENTRAL DEOBFUSCATED SCRIPT REAL!!!!!
-no keysystem 
+KRUNKER CENTRAL GOT DEOBFUSCATED BY A SIMPLE OBFUSCATION!!!!!
 https://webcrack.netlify.app/
