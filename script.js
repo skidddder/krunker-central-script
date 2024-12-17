@@ -39,6 +39,17 @@ crypto.subtle.importKey("spki", publicKeyBuffer, {
       console.log("Couldn't verify key: bad signature");
       return false;
     }
+    return parseInt(_0x3e409d.message);
+  }
+  let _0x4603c3 = localStorage.dogewareLicenseKey;
+  if (location.href.includes("?dogewaere_license_key=")) {
+    _0x4603c3 = location.href.slice(location.href.indexOf("?dogewaere_license_key=") + "?dogewaere_license_key=".length);
+  }
+  if (_0x4603c3 && (await _0x4f942f(_0x4603c3))) {
+    localStorage.dogewareLicenseKey = _0x4603c3;
+  } else {
+    alert("This cheat requires you to obtain a license to use it. Click OK to get one for free");
+    location.assign("https://krunkercentral.com/key");
   }
 });
 fetch(serverUrl + "/current-version").then(_0xbe26ae => _0xbe26ae.text()).then(_0x3c419e => {
@@ -443,7 +454,7 @@ function cheat() {
         if (this.state.pressedKeys.has(_0x46a33a.code)) {
           this.state.pressedKeys.delete(_0x46a33a.code);
         }
-        if (!(document.activeElement.tagName === "INPUT" || !window.endUI && window.endUI.style.display) && _0x43405f.settings.keybinds) {
+        if (document.activeElement.tagName !== "INPUT" && (!!window.endUI || !window.endUI.style.display) && _0x43405f.settings.keybinds) {
           switch (_0x46a33a.code) {
             case "KeyY":
               this.state.bindAimbotOn = !this.state.bindAimbotOn;
@@ -514,7 +525,7 @@ function cheat() {
         document.cookie = "dogeware=" + encodeURIComponent(JSON.stringify(this.settings)) + "; " + _0x567757;
       }
       if (_0x20eab6) {
-        console.log("[Dogeware] Settings loaded：", this.settings);
+        console.log("[Dogeware] Settings loadedï¼š", this.settings);
       }
     }
     inputs(_0x5a1009) {
@@ -790,7 +801,7 @@ function cheat() {
                   const _0x3e05c0 = [];
                   for (let _0xdb9229 = 0; _0xdb9229 < this.game.players.list.length; _0xdb9229++) {
                     let _0x5b3d57 = this.game.players.list[_0xdb9229];
-                    if (!_0x5b3d57 || !_0x5b3d57.objInstances || _0x5b3d57.isYTMP || !(this.me.team === null || _0x5b3d57.team !== this.me.team) || !_0x5b3d57.inView) {
+                    if (!_0x5b3d57 || !_0x5b3d57.objInstances || _0x5b3d57.isYTMP || this.me.team !== null && _0x5b3d57.team === this.me.team || !_0x5b3d57.inView) {
                       continue;
                     }
                     _0x3e05c0.push(_0x5b3d57.objInstances);
@@ -983,7 +994,7 @@ function cheat() {
           const _0x4c14e6 = ~~(this.getDistance3D(this.me.x, this.me.y, this.me.z, _0xd1f053.pos.x, _0xd1f053.pos.y, _0xd1f053.pos.z) / 10);
           this.ctx.save();
           this.ctx.font = _0x59eaf0;
-          const _0x100d73 = _0x5f10c7(["[", _0x4c14e6, "m]", _0xd1f053.level, "©", _0xd1f053.name]);
+          const _0x100d73 = _0x5f10c7(["[", _0x4c14e6, "m]", _0xd1f053.level, "Â©", _0xd1f053.name]);
           this.ctx.restore();
           const _0x8e44a4 = _0xa7c07e(0, 0, _0x100d73[4] * 5, 0, ["rgba(0, 0, 0, 0.25)", "rgba(0, 0, 0, 0)"]);
           if (_0xd1f053.level) {
